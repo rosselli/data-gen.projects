@@ -55,6 +55,12 @@ return [
             'visibility' => 'public',
         ],
 
+        'profiles' => [
+            'driver' => 'local',
+            'root' => app_path('Http/Controllers/profiles'),
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
