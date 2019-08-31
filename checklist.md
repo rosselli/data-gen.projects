@@ -1,14 +1,24 @@
 # Checklist: DataGen. 
 
-- [ ] **Formats**
-	- [ ] CSV
-	- [ ] JSON
-	- [ ] SQL Insert
+- [x] **Controllers**
+	- [x] **DataGen** _(2019.08.31)_
+	- [x] **Records** _(2019.08.31)_
+
+- [x] **Formats**
+	- [x] **CSV** _(2019.08.31)_
+	- [x] **JSON** _(2019.08.31)_
+	- [x] **SQL Insert** _(2019.08.31)_
+	- [x] **SQLite** _(2019.08.31)_
+
+- [ ] **Profiles**
+	- [x] **PeopleBasic** _(2019.08.31)_
+	- [ ] PostsBasic
+
+- [ ] **Commands**
+	- [x] **DataGen** _(2019.08.31)_ 
+	- [ ] Report
 
 
 
-- [ ] Calculate Executation Time.
-- [ ] Create Method to Load Data in SQLite.
-- [ ] SQL Schema for SQLite.
-- [ ] List and Calculate File Size.
-- [ ] Implement Profile for PeopleFull, Posts and Comments.
+
+
