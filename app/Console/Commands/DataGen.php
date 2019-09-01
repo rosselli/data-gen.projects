@@ -21,10 +21,12 @@ class DataGen extends Command {
         $this->info("Profile: {$profile}");
 
         $times = $this->choice('How many records do you want to generate?', [
-            '1,5,10,50',
-            '1,5,10,50,100,500',
-            '1,5,10,50,100,500,1000,5000',
-            '1,5,10,50,100,500,1000,5000,10000,50000',
+            '1,10',
+            '1,10,100',
+            '1,10,100,1000',
+            '1,10,100,1000,10000',
+            '100000',
+            '1000000',
         ], '0');
         $this->info("Times: {$times}");
 
