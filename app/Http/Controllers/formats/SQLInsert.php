@@ -9,7 +9,7 @@ class SQLInsert extends Formats {
 
     public function format(): void {
 		# insert line
-		$sql = "insert into " . $this->profile->table . " (" . $this->fieldsString . ") values ";
+		$sql = "insert into ".$this->profile->getTableName()." (".$this->fieldsString.") values ";
 
 		# values
 		$values = '';

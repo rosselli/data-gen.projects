@@ -11,11 +11,10 @@ class SQLite extends Formats {
 		parent::__construct($profile, 'sqlite', '.sqlite');
 	}
 
-    public function format(): void {
-    }
+    public function format(): void {}
 
     public function save(): void {
-        $this->createDbQuery = "create table if not exists ".$this->profile->table." (id integer primary key autoincrement, firstname text, lastname text);";
+        $this->createDbQuery = "create table if not exists ".$this->profile->getTableName()." (id integer primary key autoincrement, ".$this->fieldsString.");";
         $this->createFormatFolder();
         $this->resetDatabase();
 
