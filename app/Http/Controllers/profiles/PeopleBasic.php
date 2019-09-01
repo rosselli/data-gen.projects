@@ -3,11 +3,18 @@ namespace App\Http\Controllers\Profiles;
 use App\Http\Controllers\Records;
 
 class PeopleBasic extends Profiles {
-    public $table = 'people_basic';
-    protected $folderName = 'people-basic';
-
     public function __construct(Records $records) {
         parent::__construct($records);
+        $this->setTableName();
+        $this->setFolderName();
+    }
+
+    public function setTableName(): void {
+        $this->tableName = 'people_basic';
+    }
+
+    public function setFolderName(): void {
+        $this->folderName = 'people-basic';
     }
 
     public function generateData(): void {

@@ -10,15 +10,11 @@
 	- [x] **SQL Insert** _(2019.08.31)_
 	- [x] **SQLite** _(2019.08.31)_
 
-- [ ] **Profiles**
+- [x] **Profiles**
 	- [x] **PeopleBasic** _(2019.08.31)_
-	- [ ] PostsBasic
+	- [x] **PostsBasic** _(2019.09.01)_
 
-- [ ] **Commands**
+- [x] **Commands**
 	- [x] **DataGen** _(2019.08.31)_ 
-	- [ ] Report
-
-
-
-
+	- [x] **Report** _(2019.09.01)_
 
