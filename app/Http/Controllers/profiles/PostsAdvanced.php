@@ -18,7 +18,6 @@ class PostsAdvanced extends Profiles {
 
 	public function generateData(): void {
 		for ($i=0; $i < $this->times; $i++) {
-
 			$this->data[$i]['user_id'] = $this->faker->numberBetween(10000, 90000);
 			$this->data[$i]['category_id'] = $this->faker->numberBetween(100, 900);
 			$this->data[$i]['title'] = $this->faker->sentence(6, true);
@@ -33,7 +32,6 @@ class PostsAdvanced extends Profiles {
 			$tags = implode(', ', $this->faker->words($range));
 			$this->data[$i]['tags'] = $tags;
 			$this->data[$i]['created_at'] = $this->carbon->toDateTimeString();
-
 		}
 	}
 }
