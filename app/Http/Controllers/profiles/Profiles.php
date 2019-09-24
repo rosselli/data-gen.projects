@@ -18,12 +18,14 @@ abstract class Profiles {
 		$this->carbon = Carbon::now();
 		$this->records = $records;
 		$this->times = $records->getTimes();
+        $this->setTableName();
+        $this->setFolderName();
 		$this->generateData();
 	}
 
-    abstract public function generateData(): void;
     abstract public function setTableName(): void;
     abstract public function setFolderName(): void;
+    abstract public function generateData(): void;
 
     public function getData(): array {
 		return $this->data;

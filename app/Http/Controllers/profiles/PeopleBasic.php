@@ -5,8 +5,6 @@ use App\Http\Controllers\Records;
 class PeopleBasic extends Profiles {
     public function __construct(Records $records) {
         parent::__construct($records);
-        $this->setTableName();
-        $this->setFolderName();
     }
 
     public function setTableName(): void {

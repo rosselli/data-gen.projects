@@ -6,8 +6,6 @@ use App\Http\Controllers\Records;
 class PostsAdvanced extends Profiles {
 	public function __construct(Records $records) {
 		parent::__construct($records);
-        $this->setTableName();
-        $this->setFolderName();
     }
 
     public function setTableName(): void {
@@ -35,6 +33,7 @@ class PostsAdvanced extends Profiles {
 			$tags = implode(', ', $this->faker->words($range));
 			$this->data[$i]['tags'] = $tags;
 			$this->data[$i]['created_at'] = $this->carbon->toDateTimeString();
+
 		}
 	}
 }
