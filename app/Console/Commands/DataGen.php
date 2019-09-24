@@ -8,7 +8,7 @@ class DataGen extends Command {
     private $profiles;
 
     protected $signature = 'rosselli:data-gen';
-    protected $description = 'Data Generator for a given profile.';
+    protected $description = 'Data Generator for a given profile';
 
     public function __construct() {
         parent::__construct();

@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Storage;
 
 class Report extends Command {
     protected $signature = 'rosselli:report';
-    protected $description = 'Report Size by Records the four formats.';
+    protected $description = 'Size by Record report for all formats';
 
     public function __construct() {
         parent::__construct();
