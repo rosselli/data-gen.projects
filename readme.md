@@ -1,8 +1,8 @@
 # Data-Gen
 Data Generator application based on Profiles.<br> 
-You just have to create a profile and generate your data in four formats _(csv, json, sql's insert, sqlite)_.
+You just have to create a profile and generate your data in four formats _(CSV, JSON, SQL's insert, SQLite)_.
 
-I described in the article [What's the size of the data?](https://medium.com/@rosselli00/whats-the-size-of-the-data-e67ddcd3f713) my motivation to developed this project.
+I described in the article [What's the size of the data?](https://medium.com/@rosselli00/whats-the-size-of-the-data-e67ddcd3f713) my motivation to develop this project.
 
 > A hidden advantage of the Data-Gen is to estimate the size of a given data structure will have in a database and/or in a request's payload.
 
@@ -16,7 +16,7 @@ Available commands.
 ![Artisan Commands](docs/commands.png)
 
 ## Profiles
-Profile is the data structure (schema) that will be generated.
+A profile is the data structure (schema) that will be generated.
 For example, the Post schema is _**user_id, category_id, title, resume, text, image, caption, tags, created_at**_.
 
 1. Create a class in ```App\Http\Controllers\Profiles```.
@@ -35,12 +35,12 @@ Data-Gen has six predefined sets of records to generate.
 If you want to customize the sets, edit ```app/Console/Commands/DataGen.php```
 
 ## Formats
-Data-Gen generates data in CSV, JSON, SQL's Insert and Sqlite. 
+Data-Gen generates data in CSV, JSON, SQL's Insert, and Sqlite. 
 
 ## Storage
 The data is generated in ```storage/app/data-gen/[profile]```. 
 
 ## Report
-After generate the data, type on console ```php artisan rosselli:report```.
+After generating the data, type on console ```php artisan rosselli:report```.
 
 ![Report](docs/report.png) 
